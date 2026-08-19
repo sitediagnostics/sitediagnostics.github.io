@@ -3953,58 +3953,44 @@ input, select, textarea {
 
 My Added CSS Below
 
-/* ==========================================================================
-   CUSTOM DESKTOP NAVBAR OVERRIDES
-   ========================================================================== */
+/* ==========================================
+   MENU LAYOUT FIX
+   ========================================== */
 
-/* Darken header background to ensure maximum text readability over background images */
-#header {
-    background: rgba(36, 41, 67, 0.95) !important; /* Forty's deep blue base color */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* Arrange custom text links in a clean row next to the logo */
+/* 1. Force the custom desktop links to stay side-by-side */
 .desktop-links {
     display: flex !important;
-    margin-left: auto;
-    margin-right: 2rem;
+    margin-left: auto !important;
 }
 
-/* Format text styling for the desktop navigation elements */
+/* 2. Style the custom horizontal links nicely */
 .menu-link {
     color: #ffffff !important;
-    text-decoration: none;
+    text-decoration: none !important;
     font-weight: 600;
-    font-size: 0.75rem;
+    font-size: 0.75rem !important;
     text-transform: uppercase;
-    letter-spacing: 0.15rem;
-    margin-left: 2rem;
+    letter-spacing: 0.15rem !important;
+    margin-left: 1.5rem !important;
     border-bottom: none !important;
-    transition: color 0.2s ease-in-out;
 }
 
-/* Give links a subtle blue glow when hovered over by a mouse */
-.menu-link:hover {
-    color: #9bf1ff !important;
-}
-
-/* ==========================================================================
-   RESPONSIVE DESIGN CONTROLS (Screen Width Rules)
-   ========================================================================== */
-
-/* Rule 1: For screens wider than 980px (Laptops & Desktops) */
+/* 3. When viewing on a laptop/desktop screen, HIDE Forty's default Menu button */
 @media screen and (min-width: 981px) {
+    #header nav a[href="#menu"] {
+        display: none !important;
+    }
     .mobile-toggle {
-        display: none !important; /* Erases the default single "MENU ☰" button */
+        display: none !important;
     }
 }
 
-/* Rule 2: For screens 980px or narrower (Tablets & Smartphones) */
+/* 4. When viewing on a smaller mobile/tablet screen, HIDE our horizontal links */
 @media screen and (max-width: 980px) {
     .desktop-links {
-        display: none !important; /* Hides horizontal link row to avoid layout squash */
+        display: none !important;
     }
-    .mobile-toggle {
-        display: block !important; /* Shows native mobile hamburger button menu icon */
+    #header nav a[href="#menu"] {
+        display: inline-block !important;
     }
 }
