@@ -3950,3 +3950,61 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
+My Added CSS Below
+
+/* ==========================================================================
+   CUSTOM DESKTOP NAVBAR OVERRIDES
+   ========================================================================== */
+
+/* Darken header background to ensure maximum text readability over background images */
+#header {
+    background: rgba(36, 41, 67, 0.95) !important; /* Forty's deep blue base color */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Arrange custom text links in a clean row next to the logo */
+.desktop-links {
+    display: flex !important;
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+/* Format text styling for the desktop navigation elements */
+.menu-link {
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    margin-left: 2rem;
+    border-bottom: none !important;
+    transition: color 0.2s ease-in-out;
+}
+
+/* Give links a subtle blue glow when hovered over by a mouse */
+.menu-link:hover {
+    color: #9bf1ff !important;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN CONTROLS (Screen Width Rules)
+   ========================================================================== */
+
+/* Rule 1: For screens wider than 980px (Laptops & Desktops) */
+@media screen and (min-width: 981px) {
+    .mobile-toggle {
+        display: none !important; /* Erases the default single "MENU ☰" button */
+    }
+}
+
+/* Rule 2: For screens 980px or narrower (Tablets & Smartphones) */
+@media screen and (max-width: 980px) {
+    .desktop-links {
+        display: none !important; /* Hides horizontal link row to avoid layout squash */
+    }
+    .mobile-toggle {
+        display: block !important; /* Shows native mobile hamburger button menu icon */
+    }
+}
