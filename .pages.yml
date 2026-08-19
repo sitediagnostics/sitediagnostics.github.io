@@ -1,0 +1,19 @@
+# Where your images are stored in the HTML5 UP template
+media:
+  input: images
+  output: /images
+
+# Defining the pages you want to edit
+content:
+  - label: Homepage
+    type: document
+    path: index.html
+    fields:
+      - name: main_heading
+        label: Main Banner Heading
+        type: string
+        search: "<h1>(.*?)</h1>"
+      - name: main_body
+        label: Main Banner Text
+        type: rich-text
+        search: "<p class=\"banner-text\">(.*?)</p>"
