@@ -1,8 +1,0 @@
-content:
-  - label: Homepage
-    type: document
-    path: index.html
-    fields:
-      - name: body
-        label: Raw HTML View
-        type: code
