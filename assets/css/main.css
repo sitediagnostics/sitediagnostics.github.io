@@ -3954,28 +3954,41 @@ input, select, textarea {
 My Added CSS Below
 
 /* ==========================================
-   MENU LAYOUT FIX
+   WHITE HEADER BACKGROUND WITH DARK MENU LINKS
    ========================================== */
 
-/* 1. Force the custom desktop links to stay side-by-side */
+/* 1. Turn the entire header container solid white */
+#header {
+    background: #ffffff !important; 
+    border-bottom: 2px solid #e5e5e5 !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* 2. Style the custom horizontal link container */
 .desktop-links {
     display: flex !important;
     margin-left: auto !important;
 }
 
-/* 2. Style the custom horizontal links nicely */
+/* 3. Make text links dark charcoal for sharp contrast on the white background */
 .menu-link {
-    color: #ffffff !important;
+    color: #1a1e29 !important; /* Premium dark grey/black */
     text-decoration: none !important;
-    font-weight: 600;
+    font-weight: 700 !important; /* Slightly bolder for text legibility */
     font-size: 0.75rem !important;
     text-transform: uppercase;
     letter-spacing: 0.15rem !important;
     margin-left: 1.5rem !important;
     border-bottom: none !important;
+    transition: color 0.2s ease-in-out;
 }
 
-/* 3. When viewing on a laptop/desktop screen, HIDE Forty's default Menu button */
+/* 4. Make links change to your brand's accent red color when hovered over */
+.menu-link:hover {
+    color: #f23a41 !important; 
+}
+
+/* 5. Clean layout rules for standard computer viewports */
 @media screen and (min-width: 981px) {
     #header nav a[href="#menu"] {
         display: none !important;
@@ -3985,12 +3998,14 @@ My Added CSS Below
     }
 }
 
-/* 4. When viewing on a smaller mobile/tablet screen, HIDE our horizontal links */
+/* 6. Clean layout rules for small phone viewports */
 @media screen and (max-width: 980px) {
     .desktop-links {
         display: none !important;
     }
+    /* Force the mobile 'MENU ☰' text button to match the dark text theme */
     #header nav a[href="#menu"] {
         display: inline-block !important;
+        color: #1a1e29 !important;
     }
 }
