@@ -4012,9 +4012,3 @@ My Added CSS Below
 #wrapper > #header.alt {
     background-color: #ffffff !important;
 }
-
-/* Step up the logo image footprint safely */
-#header .logo img {
-    height: 32px !important;
-    width: auto !important;
-}
