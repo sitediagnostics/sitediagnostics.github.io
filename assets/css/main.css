@@ -3426,7 +3426,7 @@ input, select, textarea {
 			/**font-size: 3.25em; old**/
 			font-size: 3.1rem !important;        /* Keeps it large and impactful, but stops it from crowding */
     		font-weight: 700 !important;       /* Shifts the letters to a cleaner, more premium tech weight */
-    		line-height: 1.75 !important;
+    		line-height: 2 !important;
 		}
 
 		#banner > .inner {
@@ -3477,10 +3477,11 @@ input, select, textarea {
 				}
 
 				#banner > .inner .content p {
-					font-size: 0.7em;
+					font-size: 0.95rem;
 					font-weight: 600;
 					letter-spacing: 0.25em;
-					text-transform: uppercase;
+					text-transform: none;
+					line-height: 1.6;
 				}
 
 		#banner.major {
