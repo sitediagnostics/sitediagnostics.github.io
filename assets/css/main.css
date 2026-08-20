@@ -3972,9 +3972,9 @@ My Added CSS Below
 
 /* 3. Make text links dark charcoal for sharp contrast on the white background */
 .menu-link {
-    color: #1a1e29 !important; /* Premium dark grey/black */
+    color: #151924 !important; /* Premium dark grey/black */
     text-decoration: none !important;
-    font-weight: 900 !important; /* Slightly bolder for text legibility */
+    font-weight: 950 !important; /* Slightly bolder for text legibility */
     font-size: 0.95rem !important;
     letter-spacing: 0.15rem !important;
     margin-left: 1.5rem !important;
