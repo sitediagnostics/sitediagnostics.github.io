@@ -4009,3 +4009,7 @@ My Added CSS Below
         color: #1a1e29 !important;
     }
 }
+
+#wrapper > #header.alt {
+    background-color: #ffffff !important;
+}
