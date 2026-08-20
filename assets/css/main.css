@@ -3424,9 +3424,9 @@ input, select, textarea {
 
 		#banner h1 {
 			/**font-size: 3.25em; old**/
-			font-size: 3rem !important;        /* Keeps it large and impactful, but stops it from crowding */
-    		font-weight: 500 !important;       /* Shifts the letters to a cleaner, more premium tech weight */
-    		line-height: 1.25 !important;
+			font-size: 3.1rem !important;        /* Keeps it large and impactful, but stops it from crowding */
+    		font-weight: 700 !important;       /* Shifts the letters to a cleaner, more premium tech weight */
+    		line-height: 1.75 !important;
 		}
 
 		#banner > .inner {
