@@ -4016,3 +4016,14 @@ My Added CSS Below
 #wrapper > #header.alt {
     background-color: #ffffff !important;
 }
+
+
+/* Frame the terms in modern, subtle tag modules */
+#banner .content p strong {
+    font-weight: 600 !important;
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.1) !important; /* Very soft white tint background */
+    padding: 2px 8px !important;
+    border-radius: 4px !important;
+    font-size: 0.95em;
+}
