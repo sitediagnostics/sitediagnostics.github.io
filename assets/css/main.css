@@ -3479,7 +3479,7 @@ input, select, textarea {
 				#banner > .inner .content p {
 					font-size: 1.05rem;
 					font-weight: 600;
-					/**letter-spacing: 0.25em;**/
+					letter-spacing: 0.15em;
 					text-transform: none;
 					line-height: 1.6;
 				}
@@ -4017,12 +4017,7 @@ My Added CSS Below
     background-color: #ffffff !important;
 }
 
-#banner .content p {
-    text-transform: none !important;
-    letter-spacing: -0.015em !important; /* A negative value pulls the letters closer together cleanly */
-    font-size: 1.1rem !important;        /* Scales the paragraph perfectly under the large title */
-    line-height: 1.6 !important;
-}
+
 
 /* Frame the terms in modern, subtle tag modules */
 #banner .content p strong {
