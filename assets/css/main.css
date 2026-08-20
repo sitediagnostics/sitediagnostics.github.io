@@ -3974,9 +3974,9 @@ My Added CSS Below
 .menu-link {
     color: #1a1e29 !important; /* Premium dark grey/black */
     text-decoration: none !important;
-    font-weight: 700 !important; /* Slightly bolder for text legibility */
-    font-size: 0.75rem !important;
-    text-transform: uppercase;
+    font-weight: 800 !important; /* Slightly bolder for text legibility */
+    font-size: 0.80rem !important;
+    text-transform: lowercase;
     letter-spacing: 0.15rem !important;
     margin-left: 1.5rem !important;
     border-bottom: none !important;
