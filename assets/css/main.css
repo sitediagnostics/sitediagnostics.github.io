@@ -3479,7 +3479,7 @@ input, select, textarea {
 				#banner > .inner .content p {
 					font-size: 0.95rem;
 					font-weight: 600;
-					letter-spacing: 0.25em;
+					/**letter-spacing: 0.25em;**/
 					text-transform: none;
 					line-height: 1.6;
 				}
