@@ -1,32 +1,43 @@
-Forty by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+## 1. Managing the Draft Branch (Step-by-Step)
 
+### A. Create the Draft Branch (Do this ONCE at the start)
+Run this command in the terminal to create and switch to your hidden sandbox branch:
+```bash
+git checkout -b draft-mode
+```
 
-This is Forty, my latest and greatest addition to HTML5 UP and, per its incredibly
-creative name, my 40th (woohoo)! It's built around a grid of "image tiles" that are
-set up to smoothly transition to secondary landing pages (for which a separate page
-template is provided), and includes a number of neat effects (check out the menu!),
-extra features, and all the usual stuff you'd expect. Hope you dig it!
+### B. Daily Saving Strategy (Work PC ↔ MacBook Sync)
+Whenever you finish editing at the end of the day and want to switch computers *without* making your rough draft public, run these commands:
+```bash
+git add .
+git commit -m "Drafting updates"
+git push origin draft-mode
+```
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+### C. Moving to a New Device (Opening the Draft)
+When you log into your Codespace on your other computer and need to ensure you are working inside your draft rather than the live site, run:
+```bash
+git checkout draft-mode
+```
 
-(* = not included)
+---
 
-AJ
-aj@lkn.io | @ajlkn
+## 2. Publishing Live (When the site is 100% finished)
+When your template changes look flawless in the preview panel and you are ready to update your public website (`sitediagnostics.github.io`), follow these step-by-step commands to merge your draft into the main line:
 
-
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+1. **Switch to your main branch:**
+   ```bash
+   git checkout main
+   ```
+2. **Pull down the draft changes you made:**
+   ```bash
+   git merge draft-mode
+   ```
+3. **Push to the live public internet:**
+   ```bash
+   git push origin main
+   ```
+4. **Switch back to draft mode for future edits:**
+   ```bash
+   git checkout draft-mode
+   ```
